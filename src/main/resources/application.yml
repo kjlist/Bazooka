@@ -11,5 +11,8 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://127.0.0.1:32781/bazooka?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://127.0.0.1:32775/bazooka?useUnicode=true&characterEncoding=utf-8
 
+test:
+  value1: firstAgent
+  value2: secondAgent
