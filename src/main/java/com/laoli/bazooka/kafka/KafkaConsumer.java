@@ -16,9 +16,9 @@ public class KafkaConsumer {
 
 
 
-    @KafkaListener(id = "listen1", topics = "topic-demo1", groupId = "con-group1")
+    @KafkaListener(id = "vitolisten0308", topics = "topic-demo1", groupId = "vitocon-group1")
     public void listen1(ConsumerRecord<?, ?> record) throws Exception {
-        logger.info("1 topic = {}, partition = {} ,offset = {}, value = {} ", record.topic(),record.partition(), record.offset(), record.value());
+        logger.info("vitolisten0308---topic = {}, partition = {} ,offset = {}, value = {} ", record.topic(),record.partition(), record.offset(), record.value());
 
     }
 }
