@@ -2,3 +2,5 @@ server:
   port: 8841
   servlet:
     context-path: /bazooka
+log:
+  level: debug
