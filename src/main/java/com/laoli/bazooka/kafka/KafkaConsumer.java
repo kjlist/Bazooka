@@ -22,9 +22,9 @@ public class KafkaConsumer {
         logger.info("log---listen03081---topic = {}, partition = {} ,offset = {}, value = {} ", record.topic(),record.partition(), record.offset(), record.value());
     }
 
-//    @KafkaListener(id = "vitolisten03081", topics = "topic-demo1", groupId = "vitocon-group1")
-//    public void listen03082(ConsumerRecord<?, ?> record) throws Exception {
-//        logger.info("listen03082---vitolisten03081");
-//        logger.info("listen03082---topic = {}, partition = {} ,offset = {}, value = {} ", record.topic(),record.partition(), record.offset(), record.value());
-//    }
+    @KafkaListener(id = "vitolisten03081", topics = "topic-demo1", groupId = "likekecon-group1")
+    public void listen03082(ConsumerRecord<?, ?> record) throws Exception {
+        logger.info("log---listen03082---vitolisten03081");
+        logger.info("log---listen03082---topic = {}, partition = {} ,offset = {}, value = {} ", record.topic(),record.partition(), record.offset(), record.value());
+    }
 }
