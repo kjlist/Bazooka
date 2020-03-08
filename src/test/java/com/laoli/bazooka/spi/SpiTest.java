@@ -1,7 +1,6 @@
 package com.laoli.bazooka.spi;
 
 
-import com.laoli.bazooka.transaction.entity.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,8 +12,6 @@ import java.util.ServiceLoader;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpiTest {
-
-
 
 
     @Test
