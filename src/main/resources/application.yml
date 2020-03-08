@@ -1,5 +1,5 @@
 server:
-  port: 8841
+  port: 8842
   servlet:
     context-path: /bazooka
 log:
