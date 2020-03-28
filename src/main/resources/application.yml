@@ -4,3 +4,10 @@ server:
     context-path: /bazooka
 log:
   level: debug
+
+spring:
+  data:
+    hbase:
+      quorum: 127.0.0.1:2181
+      rootDir: file:///home/hbase/rootdir
+      nodeParent: /home/hbase/zkData
