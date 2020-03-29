@@ -13,25 +13,4 @@ import java.util.Date;
 @Component
 public class KafkaConsumer {
     private static Logger logger = LoggerFactory.getLogger(KafkaConsumer.class);
-
-
-
-    @KafkaListener(id = "vitolisten03081", topics = "topic-demo1", groupId = "likekecon-group1")
-    public void listen03081(ConsumerRecord<?, ?> record) throws Exception {
-        logger.info("log---listen03081---vitolisten03081");
-        logger.info("log---listen03081---topic = {}, partition = {} ,offset = {}, value = {} ", record.topic(),record.partition(), record.offset(), record.value());
-    }
-
-    @KafkaListener(id = "vitolisten03082", topics = "topic-demo1", groupId = "likekecon-group1")
-    public void listen03082(ConsumerRecord<?, ?> record) throws Exception {
-        logger.info("log---listen03082---vitolisten03082");
-        logger.info("log---listen03082---topic = {}, partition = {} ,offset = {}, value = {} ", record.topic(),record.partition(), record.offset(), record.value());
-    }
-
-    @KafkaListener(id = "vitolisten03083", topics = "topic-demo1", groupId = "likekecon-group1")
-    public void listen03083(ConsumerRecord<?, ?> record) throws Exception {
-        logger.info("log---listen03083---vitolisten03083");
-        logger.info("log---listen03083---topic = {}, partition = {} ,offset = {}, value = {} ", record.topic(),record.partition(), record.offset(), record.value());
-    }
-
 }
