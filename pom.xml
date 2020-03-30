@@ -47,7 +47,6 @@
             <scope>test</scope>
         </dependency>
 
-
         <dependency>
             <groupId>com.spring4all</groupId>
             <artifactId>spring-boot-starter-hbase</artifactId>
